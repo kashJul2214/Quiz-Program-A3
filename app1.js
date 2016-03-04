@@ -16,17 +16,17 @@ quizModule.controller('QuizProgramController',['$scope', function($scope){
             correct: 0,
             incorrect: 0
         },
-                {
+        {
             name: "Carlos Alvarez",
             correct: 0,
             incorrect: 0
         },
-                {
+        {
             name: "Lisa Jimenez",
             correct: 0,
             incorrect: 0
         },
-                {
+        {
             name: "Jennifer Lopez",
             correct: 0,
             incorrect: 0
@@ -56,7 +56,7 @@ quizModule.controller('QuizProgramController',['$scope', function($scope){
         {
             text: "AngularJS is fun", 
             answer: "Yes"
-        },
+        }
     ];
     
     qpc.questions_completed = [];
@@ -77,7 +77,6 @@ quizModule.controller('QuizProgramController',['$scope', function($scope){
             qpc.questions = qpc.questions_completed;
             qpc.questions_completed = [];
         }
-
     }
     
     qpc.getNextStudent = function(){
