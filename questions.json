@@ -1,22 +1,82 @@
-[
+[       
     {
-        "text": "AngularJS uses what programming language?", 
-        "answer": "JavaScript"
-    },
-    {
-        "text": "The scope is the ______ between the template and controller", 
-        "answer": "glue"
-    },
-    {
-        "text": "Angular uses _______ and _________ in the template", 
-        "answer": "directives and expressions"
-    },
-    {
-        "text": "You bootstrap your angular application with the ngApp directive", 
+        "text": "If set to _______, the JSON output will contain newlines and whitespace.",
         "answer": "true"
     },
     {
-        "text": "AngularJS is fun", 
-        "answer": "Yes"
+        "text": "If set to an _______, the JSON output will contain that many spaces per indentation.",
+        "answer": "integer"
+    },
+    {
+        "text": "The _______ is the glue between the template and controller.",
+        "answer": "scope"
+    },
+    {
+        "text": "What function manually starts up angular application?",
+        "answer": "angular.bootstrap"
+    }, 
+    {
+        "text": "What function determines if a reference is an Array?",
+        "answer": "angular.isArray"
+    },
+    {
+        "text": "The ________ directive allows you to specify custom behavior when an element is clicked.",
+        "answer": "ngClick"
+    },
+    {
+        "text": "What directive attaches a controller class to the view?",
+        "answer": "ngController"
+    },
+    {
+        "text": "The _______ service is a core Angular service that facilitates communication with the remote HTTP servers via the browser's XMLHttpRequest object or via JSONP.",
+        "answer": "$http"
+    },
+    {
+        "text": "The ________ service is responsible for instantiating controllers.",
+        "answer": "$controller"
+    }, 
+    {
+        "text": "The main purpose of the ________ service is to simplify debugging and troubleshooting.",
+        "answer": "$log"
+    },
+    {
+        "text": "The $http service is a function which takes a single argument — a configuration object — that is used to generate an HTTP request and returns a _______",
+        "answer": "promise"
+    },
+    {
+        "text": "What servive is a Factory that constructs Cache objects and gives access to them?",
+        "answer": "$cacheFactory"
+    },
+    {
+        "text": "What directive creates new scope?",
+        "answer": "ngController"
+    },
+    {
+        "text": "The $controller is dependant of the ________.",
+        "answer": "$injector"
+    }, 
+    {
+        "text": "The ________ directive instantiates a template once per item from a collection.",
+        "answer": "ngRepeat"
+    },
+    {
+        "text": "ngRepeat uses ________ to detect changes in the collection. When a change happens, ngRepeat then makes the corresponding changes to the ________.",
+        "answer": "$watchCollection, DOM"
+    },
+    {
+        "text": "To minimize creation of DOM elements, ngRepeat uses a function to _________ of all items in the collection and their corresponding DOM elements.",
+        "answer": "keep track"
+    },
+    {
+        "text": "If you do need to repeat duplicate items, you can substitute the default tracking behavior with your own using the ________ expression.",
+        "answer": "track by"
+    },
+    {
+        "text": "You can specify an ________ to be used as the root module for the application.",
+        "answer": "AngularJS module"
+    }, 
+    {
+        "text": "The $controller service returns an _______ of a given controller.",
+        "answer": "instance"
     }
 ]

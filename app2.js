@@ -55,6 +55,7 @@ quizModule.controller('QuizProgramController', ['$scope', 'studentListService', 
     qpc.update = function(val) {
         return LocalStorageService.setData(val);
     }
+    
     qpc.getStudents = function(){             //use getStudents service here
         var fromStorage = qpc.fetch();
         if(fromStorage){
@@ -74,6 +75,7 @@ quizModule.controller('QuizProgramController', ['$scope', 'studentListService', 
                 );
         }
     };
+    
     qpc.getQuestions = function(){
         questionListService.getQuestionList()
         .then(
@@ -86,8 +88,10 @@ quizModule.controller('QuizProgramController', ['$scope', 'studentListService', 
             }
         );
     }
+    
     qpc.getStudents();     // get students and questions now
-    qpc.getQuestions();     
+    qpc.getQuestions();  
+    
 }]);
 
 ///// STUDENT LIST FACTORY //////////////////////////////////////////////////
@@ -120,17 +124,17 @@ quizModule.factory('questionListService', ['$http', function($http){
 quizModule.factory("LocalStorageService", function($window, $rootScope) {
     
     angular.element($window).on('storage', function(event) {
-        if (event.key === 'my-storage') {
+        if (event.key === 'my-storage2') {
             $rootScope.$apply();
         }
     });    
     return {
         setData: function(val) {
-            $window.localStorage && $window.localStorage.setItem('my-storage', val);
+            $window.localStorage && $window.localStorage.setItem('my-storage2', val);
             return this;
         },
         getData: function() {
-            var val = $window.localStorage && $window.localStorage.getItem('my-storage');
+            var val = $window.localStorage && $window.localStorage.getItem('my-storage2');
             var data = angular.fromJson(val);
             return data; 
         }
