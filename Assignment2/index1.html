@@ -12,7 +12,6 @@
         
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    
     </head>
     <body style="background-color:#333">     
         <div class="jumbotron"; style="background-color:gray">
@@ -26,16 +25,16 @@
                 <!--<button type="button" class="btn btn-lg btn-default" ng-show="qpc.show_next" ng-click="qpc.getNext()">Next Student</button><br/>-->
                 <font style="color: white"> 
                 <p></p><span class="label label-info"; style="color: black"> student:</span> {{qpc.selected_student.name}} - 
-                correct: {{qpc.selected_student.correct}} - incorrect: {{qpc.selected_student.incorrect}}</p>
+                correct: {{qpc.selected_student.correct}} - wrong: {{qpc.selected_student.wrong}}</p>
                 </font>
-                <p><span class="label label-info" style="color: black"> question:</span> {{qpc.selected_question.text}}</p>
+                <p><span class="label label-info" style="color: black"> question:</span> {{qpc.selected_question.question}}</p>
                 <p><span class="label label-info" style="color: black"> answer:</span> {{qpc.selected_question.answer}}</p>
                 <button type="button" class="btn btn-primary" ng-click="qpc.doCorrect()"> Correct</button>
-                <button type="button" class="btn btn-warning" style="color: black" ng-click="qpc.doIncorrect()"> Incorrect</button>
+                <button type="button" class="btn btn-warning" style="color: black" ng-click="qpc.doWrong()"> Wrong</button>
             </div>
         </div>
         <script src="angular.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>                
-        <script src="app2.js"></script>
+        <script src="app1.js"></script>
     </body>
 </html>
